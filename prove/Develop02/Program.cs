@@ -63,9 +63,14 @@ class Program
                 {
                     break;
                 }
+
+                else if(answer == 0)
+                {
+                    break;
+                }
                 else
                 {
-                    Console.WriteLine("Invalid choice.");
+                    Console.WriteLine("That is not an option");
                         break;
                 }
             }
