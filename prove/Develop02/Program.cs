@@ -20,7 +20,7 @@ class Program
             "What was the most surprising thing that happened today?",
             "What did I do today that I am proud of?"
         };
-        int answer = 0;
+        int answer = -1;
          while (answer != 5)
             {
                 Console.WriteLine("\nWelcome to the Journal Program");
