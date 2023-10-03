@@ -1,5 +1,4 @@
-namespace Develop03.Classes
-{
+
     
     public class Reference
     {
@@ -64,4 +63,3 @@ namespace Develop03.Classes
             Console.Write($"{_book} {_chapter}:{versePrinter} - ");
         }
     }
-}

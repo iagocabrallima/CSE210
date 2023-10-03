@@ -1,5 +1,4 @@
-namespace Develop03.Classes
-{
+
     public class Word
     {
 
@@ -46,4 +45,3 @@ namespace Develop03.Classes
             }
         }
     }
-}

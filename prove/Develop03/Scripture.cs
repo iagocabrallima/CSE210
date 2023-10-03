@@ -1,5 +1,5 @@
-namespace Develop03.Classes
-{
+
+
     public class Scripture
     {
         private List<Word> _wordList = new List<Word>();
@@ -73,4 +73,3 @@ namespace Develop03.Classes
             Console.WriteLine();
         }
     }
-}
