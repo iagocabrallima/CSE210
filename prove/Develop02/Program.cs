@@ -75,7 +75,7 @@ class Program
                 }
             }
 
-            static string GetRandomPrompt(List<string> prompts)
+        static string GetRandomPrompt(List<string> prompts)
         {
             Random random = new Random();
             int index = random.Next(prompts.Count);
