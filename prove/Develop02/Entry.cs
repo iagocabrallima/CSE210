@@ -1,33 +1,34 @@
-class Entry
+using System.IO;
+
+    // Define class
+    public class Entry
     {
-        public string _prompt;
-        public string _response;
-        public string _date;
+        // Attributes
+        public string _dateTime = "";
+        public string _prompt = "";
+        public string _body = "";
 
-        public Entry(string prompt, string response, string date)
+        // Constructor
+        public Entry() { }
+
+        // Methods
+        public void Display()
         {
-            _prompt = prompt;
-            _response = response;
-            _date = date;
+            Console.WriteLine(_dateTime);
+            if (_prompt != "none")
+            {
+                Console.WriteLine("Prompt: " + _prompt);
+            }
+            Console.WriteLine(_body);
         }
 
-        public string GetPrompt()
+        public Entry SaveTo(StreamWriter outputFile)
         {
-            return _prompt;
-        }
-
-        public string GetResponse()
-        {
-            return _response;
-        }
-
-        public string GetDate()
-        {
-            return _date;
-        }
-
-        public override string ToString()
-        {
-            return $"Date: {_date} - Prompt: {_prompt} \n{_response}\n";
+            outputFile.WriteLine("##ENTRY");
+            outputFile.WriteLine(_dateTime);
+            outputFile.WriteLine(_prompt);
+            outputFile.WriteLine(_body);
+            // outputFile.WriteLine("END##");
+            return this;
         }
     }
