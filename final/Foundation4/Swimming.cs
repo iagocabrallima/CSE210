@@ -1,5 +1,4 @@
-namespace Foundation4.Classes
-{
+
     // Define Class
     public class Swimming : Exercise
     {
@@ -30,4 +29,4 @@ namespace Foundation4.Classes
             return _length / GetDistance();
         }
     }
-}
+
