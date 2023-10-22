@@ -1,5 +1,5 @@
-namespace Foundation4.Classes
-{
+
+
     // Define Class
     public class Cycling : Exercise
     {
@@ -30,4 +30,3 @@ namespace Foundation4.Classes
             return 60 / GetSpeed();
         }
     }
-}

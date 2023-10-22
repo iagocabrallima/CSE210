@@ -1,5 +1,4 @@
- namespace Foundation4.Classes
-{
+
     // Define Class
     public class Exercise
     {
@@ -38,4 +37,3 @@
             return $"{_date} {_exerciseType} ({_length} min): Distance {GetDistance().ToString("0.0")} km, Speed: {GetSpeed().ToString("0.0")} kph, Pace: {GetPace().ToString("0.0")} min per km";
         }
     }
-}
